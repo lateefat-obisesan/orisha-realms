@@ -20,7 +20,23 @@ namespace orisha_realms
         {
             Name = name;
             Lineage = lineage;
-
+            Health = health;
+            Defense = defense;
+            Speed = speed;
+            Intellect = intellect;
+            Agility = agility;
         }
+
+        public Virtual void Act()
+        {
+            Console.WriteLine(Name + "takes action.")
+        }
+
+        public virtual void Speak()
+        {
+            Console.WriteLine(Name + " says: I am ready.");
+        }
+
+
     }
 }

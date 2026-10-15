@@ -8,8 +8,14 @@ namespace orisha_realms
 {
    public abstract class CharacterPower : Character
     {
-        proctected Character _character
+        protected Character _character;
 
-        public 
+        public CharacterPower(Character character) : base(character.Name, character.Lineage, character.Health, character.Defense, character.Speed, character.Strength, character.Intellect, character.Agility)
+        {
+            _character = character;
+        }
+
+        public override void Act() => _character.Act();
+        public override void Speak() => _character.Speak();
     }
 }

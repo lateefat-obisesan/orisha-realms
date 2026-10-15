@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace orisha_realms
 {
-   public class World
+    public class World
     {
         private static World _instance;
 
@@ -19,6 +19,14 @@ namespace orisha_realms
             GameDifficulty = "Normal";
             WorldTime = 1;
             IsRunning = true;
+        }
+
+        public static World GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new World();
+            }
         }
     }
 }

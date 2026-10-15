@@ -8,5 +8,9 @@ namespace orisha_realms
 {
    public class WaterPower : CharacterPower
     {
+        public WaterPower(Character character) : base(character)
+        {
+            Health += 25;
+        }
     }
 }

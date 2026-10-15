@@ -12,7 +12,7 @@ namespace orisha_realms
         public void AddItem(string item)
         {
             _items.Add(item);
-            Console.WriteLine($"[Game items] Added item: {item}");
+            Console.WriteLine($"Added item +  {item}");
         }
 
         public void ShowItems()
@@ -26,7 +26,7 @@ namespace orisha_realms
             {
                 foreach (var item in _items)
                 {
-                    Console.WriteLine($"- {item}");
+                    Console.WriteLine($"{item}");
                 }
             }
         }

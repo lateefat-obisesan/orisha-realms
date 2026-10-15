@@ -69,6 +69,17 @@ namespace orisha_realms
                         }
                         else Console.WriteLine("Create a character first!");
                         break;
+
+                        case "5":
+                        Console.WriteLine("1. Add Item - 2. View Items");
+                        string invChoice = Console.ReadLine();
+                        if (invChoice == "1")
+                        {
+                            Console.Write("Enter item name: ");
+                            playerInventory.AddItem(Console.ReadLine());
+                        }
+                        else playerInventory.ShowItems();
+                        break;
                 }
             }
     }

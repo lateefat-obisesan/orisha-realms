@@ -13,6 +13,7 @@ namespace orisha_realms
         public int Health { get; set; }
         public int Defense { get; set; }
         public int Speed { get; set; }
+        public int Strength { get; set; }
         public int Intellect { get; set; }
         public int Agility { get; set; }
 
@@ -23,6 +24,7 @@ namespace orisha_realms
             Health = health;
             Defense = defense;
             Speed = speed;
+            Strength = strength;
             Intellect = intellect;
             Agility = agility;
         }
@@ -45,6 +47,7 @@ namespace orisha_realms
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Defense: " + Defense);
             Console.WriteLine("Speed: " + Speed);
+            Console.WriteLine("Strength: " + Strength);
             Console.WriteLine("Intellect: " + Intellect);
             Console.WriteLine("Agility: " + Agility);
         }

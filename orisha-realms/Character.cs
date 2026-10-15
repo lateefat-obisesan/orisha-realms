@@ -29,7 +29,7 @@ namespace orisha_realms
             Agility = agility;
         }
 
-        public Virtual void Act()
+        public virtual void Act()
         {
             Console.WriteLine(Name + "takes action.");
         }

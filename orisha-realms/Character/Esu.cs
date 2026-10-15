@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace orisha_realms
+namespace orisha_realms.Character
 {
-    public class Yemoja
+    public class Esu
     {
     }
 }

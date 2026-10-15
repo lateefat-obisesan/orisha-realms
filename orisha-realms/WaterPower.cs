@@ -12,5 +12,17 @@ namespace orisha_realms
         {
             Health += 25;
         }
+
+        public override void Act()
+        {
+            base.Act();
+            Console.WriteLine($"{Name} summons flowing water currents!");
+        }
+
+        public override void Speak()
+        {
+            base.Speak();
+            Console.WriteLine($"{Name} whispers: Water heals and protects.");
+        }
     }
 }

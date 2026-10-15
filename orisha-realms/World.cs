@@ -27,6 +27,7 @@ namespace orisha_realms
             {
                 _instance = new World();
             }
+            return _instance;
         }
     }
 }

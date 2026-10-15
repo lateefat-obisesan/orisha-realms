@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace orisha_realms
 {
-   public class World
+   public class Inventory
     {
+        private List<string> _items = new List<string>();
+        public void AddItem(string item)
+        {
+            _items.Add(item);
+            Console.WriteLine($"[Game items] Added item: {item}");
+        }
     }
 }

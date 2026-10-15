@@ -29,7 +29,7 @@ namespace orisha_realms
 
         public Virtual void Act()
         {
-            Console.WriteLine(Name + "takes action.")
+            Console.WriteLine(Name + "takes action.");
         }
 
         public virtual void Speak()
@@ -37,6 +37,16 @@ namespace orisha_realms
             Console.WriteLine(Name + " says: I am ready.");
         }
 
-
+        public void PrintDetails()
+        {
+            Console.WriteLine("\n--- Character Details ---");
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Lineage: " + Lineage);
+            Console.WriteLine("Health: " + Health);
+            Console.WriteLine("Defense: " + Defense);
+            Console.WriteLine("Speed: " + Speed);
+            Console.WriteLine("Intellect: " + Intellect);
+            Console.WriteLine("Agility: " + Agility);
+        }
     }
 }

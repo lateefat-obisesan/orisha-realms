@@ -70,7 +70,7 @@ namespace orisha_realms
                         else Console.WriteLine("Create a character first!");
                         break;
 
-                        case "5":
+                     case "5":
                         Console.WriteLine("1. Add Item - 2. View Items");
                         string invChoice = Console.ReadLine();
                         if (invChoice == "1")
@@ -79,6 +79,11 @@ namespace orisha_realms
                             playerInventory.AddItem(Console.ReadLine());
                         }
                         else playerInventory.ShowItems();
+                        break;
+
+                    case "6":
+                        world.WorldTime++;
+                        Console.WriteLine($"World time advanced to Day {world.WorldTime}");
                         break;
                 }
             }

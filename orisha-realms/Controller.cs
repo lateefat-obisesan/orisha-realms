@@ -29,6 +29,27 @@ namespace orisha_realms
                 Console.WriteLine("6. Advance World Time (Day++)");
                 Console.WriteLine("7. Exit Simulation");
                 Console.Write("Select an option (1-7): ");
+
+                string input = Console.ReadLine();
+
+                switch (input)
+                {
+                    case "1":
+                        Console.Write("Enter character name: ");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("Choose Lineage (ogun / eshu / yemoja): ");
+                        string type = Console.ReadLine();
+                        playerCharacter = Factory.CreateCharacter(type, name);
+                        Console.WriteLine("Character created successfully!");
+                        break;
+
+                    case "2":
+                        if (playerCharacter != null) playerCharacter.PrintDetails();
+                        else Console.WriteLine("No character created yet!");
+                        break;
+
+
+                }
             }
     }
 }

@@ -8,5 +8,9 @@ namespace orisha_realms
 {
    public class FirePower : CharacterPower
     {
+        public FirePower(Character character) : base(character)
+        {
+            Strength += 20;
+        }
     }
 }

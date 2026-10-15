@@ -14,5 +14,13 @@ namespace orisha_realms
             _items.Add(item);
             Console.WriteLine($"[Game items] Added item: {item}");
         }
-    }
+
+        public void ShowItems()
+        {
+            Console.WriteLine("\n--- Inventory Items ---");
+            if (_items.Count == 0)
+            {
+                Console.WriteLine("Inventory is empty.");
+            }
+        }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace orisha_realms
 {
-   public class World
+   public class FirePower : CharacterPower
     {
     }
 }

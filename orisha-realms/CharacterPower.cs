@@ -14,7 +14,6 @@ namespace orisha_realms
         {
             _character = character;
         }
-
         public override void Act() => _character.Act();
         public override void Speak() => _character.Speak();
     }

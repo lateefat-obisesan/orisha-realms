@@ -37,7 +37,7 @@ namespace orisha_realms
                     case "1":
                         Console.Write("Enter character name: ");
                         string name = Console.ReadLine();
-                        Console.WriteLine("Choose Lineage (ogun - eshu - yemoja): ");
+                        Console.WriteLine("Choose Lineage (Ogun - Esu - Yemoja): ");
                         string type = Console.ReadLine();
                         playerCharacter = Factory.CreateCharacter(type, name);
                         Console.WriteLine("Character created successfully!");
@@ -46,16 +46,6 @@ namespace orisha_realms
                     case "2":
                         if (playerCharacter != null) playerCharacter.PrintDetails();
                         else Console.WriteLine("No character created yet!");
-                        break;
-
-                    case "3":
-                        if (playerCharacter != null)
-                        {
-                            Console.WriteLine("\n--- Actions ---");
-                            playerCharacter.Act();
-                            playerCharacter.Speak();
-                        }
-                        else Console.WriteLine("No character found!");
                         break;
 
                     case "4":

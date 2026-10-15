@@ -16,7 +16,7 @@ namespace orisha_realms
         public override void Act()
         {
             base.Act();
-            Console.WriteLine($"{Name} summons flowing water currents!");
+            Console.WriteLine($"{Name} summons the water !");
         }
 
         public override void Speak()

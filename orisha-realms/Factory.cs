@@ -25,9 +25,9 @@ namespace orisha_realms
                     yemoja.Name = name;
                     return yemoja;
                 default:
-                    Ogun defaultChar = new Ogun();
-                    defaultChar.Name = name;
-                    return defaultChar;
+                    Ogun error = new Ogun();
+                   error.Name = name;
+                    return error;
             }
         }
     }

@@ -16,7 +16,7 @@ namespace orisha_realms
         public override void Act()
         {
             base.Act();
-            Console.WriteLine($"{Name} channels blazing fire power!");
+            Console.WriteLine($"{Name} uses fire attack.");
         }
 
         public override void Speak()

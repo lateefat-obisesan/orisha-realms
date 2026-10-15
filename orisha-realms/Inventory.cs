@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace orisha_realms
 {
-   public class Inventory
+    public class Inventory
     {
         private List<string> _items = new List<string>();
         public void AddItem(string item)
@@ -22,5 +22,14 @@ namespace orisha_realms
             {
                 Console.WriteLine("Inventory is empty.");
             }
+            else
+            {
+                foreach (var item in _items)
+                {
+                    Console.WriteLine($"- {item}");
+                }
+            }
         }
+    }
 }
+

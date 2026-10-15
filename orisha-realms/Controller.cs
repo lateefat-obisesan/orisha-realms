@@ -71,19 +71,25 @@ namespace orisha_realms
                         break;
 
                     case "5":
-                        Console.WriteLine("1. Add Item - 2. View Items");
-                        string invChoice = Console.ReadLine();
-                        if (invChoice == "1")
+                        Console.WriteLine("1. Add Item");
+                        Console.WriteLine("2. View Items");
+                        Console.Write("Select choice: ");
+                        string inventoryOption = Console.ReadLine();
+                        if (inventoryOption == "1")
                         {
                             Console.Write("Enter item name: ");
-                            playerInventory.AddItem(Console.ReadLine());
+                            string newItem = Console.ReadLine();
+                            playerInventory.AddItem(newItem);
                         }
-                        else playerInventory.ShowItems();
+                        else if (inventoryOption == "2")
+                        {
+                            playerInventory.ShowItems();
+                        }
                         break;
 
                     case "6":
                         world.WorldTime++;
-                        Console.WriteLine($"World time advanced to Day {world.WorldTime}");
+                        Console.WriteLine($"Current Day {world.WorldTime}");
                         break;
 
                     case "7":

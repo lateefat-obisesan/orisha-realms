@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace orisha_realms.Character
+namespace orisha_realms
 {
-    public class Ogun
+    public class Esu
     {
     }
 }

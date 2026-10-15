@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace orisha_realms
 {
-   public class Controller
+    public class Controller
     {
         public void RunSimulation()
         {
@@ -58,7 +58,7 @@ namespace orisha_realms
                         else Console.WriteLine("No character found!");
                         break;
 
-                        case "4":
+                    case "4":
                         if (playerCharacter != null)
                         {
                             Console.WriteLine("Choose Power (1. FirePower - 2. WaterPower): ");
@@ -70,7 +70,7 @@ namespace orisha_realms
                         else Console.WriteLine("Create a character first!");
                         break;
 
-                     case "5":
+                    case "5":
                         Console.WriteLine("1. Add Item - 2. View Items");
                         string invChoice = Console.ReadLine();
                         if (invChoice == "1")
@@ -85,7 +85,23 @@ namespace orisha_realms
                         world.WorldTime++;
                         Console.WriteLine($"World time advanced to Day {world.WorldTime}");
                         break;
+
+                    case "7":
+                        world.IsRunning = false;
+                        Console.WriteLine("Exiting simulation.");
+                        break;
+
+                    default:
+                        Console.WriteLine("Option not available.");
+                        break;
+                }
+
+                if (world.IsRunning)
+                {
+                    Console.WriteLine("\nPress any key to continue...");
+                    Console.ReadKey();
                 }
             }
+        }
     }
 }

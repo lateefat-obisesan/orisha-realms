@@ -99,7 +99,7 @@ namespace orisha_realms
                 if (world.IsRunning)
                 {
                     Console.WriteLine("\nPress any key to continue...");
-                    Console.ReadKey();
+                    Console.ReadLine();
                 }
             }
         }

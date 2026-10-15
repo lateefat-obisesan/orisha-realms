@@ -1,10 +1,11 @@
 ﻿namespace orisha_realms
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Controller controller = new Controller();
+            controller.RunSimulation();
         }
     }
 }

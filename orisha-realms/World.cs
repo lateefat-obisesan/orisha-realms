@@ -29,5 +29,12 @@ namespace orisha_realms
             }
             return _instance;
         }
+
+        public void DisplayWorldStatus()
+        {
+            Console.WriteLine($"\n--- Global World State ---");
+            Console.WriteLine($"Difficulty: {GameDifficulty}");
+            Console.WriteLine($"World Time (Day): {WorldTime}");
+        }
     }
 }

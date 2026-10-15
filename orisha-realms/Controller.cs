@@ -48,6 +48,16 @@ namespace orisha_realms
                         else Console.WriteLine("No character created yet!");
                         break;
 
+                    case "3":
+                        if (playerCharacter != null)
+                        {
+                            Console.WriteLine("\n--- Actions ---");
+                            playerCharacter.Act();
+                            playerCharacter.Speak();
+                        }
+                        else Console.WriteLine("No character found!");
+                        break;
+
                     case "4":
                         if (playerCharacter != null)
                         {

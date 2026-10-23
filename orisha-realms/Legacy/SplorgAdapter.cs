@@ -27,9 +27,10 @@ namespace orisha_realms.Legacy
                     _displayColor = "Blue";
                     break;
                 default:
-                    throw new ArgumentException("Choose Red, Green or Blue.", nameof(color));
+                    throw new ArgumentException("Choose Red, Green or Blue.");
             }
             _splorg = new Splorg(name, _displayColor);
+
             Lineage = _displayColor + "Splorg";
 
             Health = _splorg.BubbleDurability * 10;
@@ -42,7 +43,7 @@ namespace orisha_realms.Legacy
         }
         public override void Act()
         {
-            _displayColor.SplorgAction();
+            _splorg.SplorgAction();
         }
 
         public override void Speak()

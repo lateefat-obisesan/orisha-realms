@@ -40,5 +40,9 @@ namespace orisha_realms.Legacy
             Agility = (_splorg.Finesse + _splorg.Luck) * 5;
 
         }
+        public override void Act()
+        {
+            _displayColor.SplorgAction();
+        }
     }
 }

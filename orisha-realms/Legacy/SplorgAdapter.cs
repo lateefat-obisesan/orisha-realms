@@ -14,8 +14,20 @@ namespace orisha_realms.Legacy
         public SplorgAdapter(string name, string color) : base(name, color + " Splorg", 50, 50, 50, 50, 50, 50)
         {
             switch ()
-            { 
-                
+            {
+                case "red":
+                    _displayColor = "Red";
+                    break;
+
+                case "green":
+                    _displayColor = "Green";
+                    break;
+
+                case "blue":
+                    _displayColor = "Blue";
+                    break;
+                default:
+                    throe new ArgumentException("Choose Red, Green or Blue.", nameof(color));
             }
 
         }

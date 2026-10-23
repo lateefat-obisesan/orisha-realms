@@ -44,5 +44,10 @@ namespace orisha_realms.Legacy
         {
             _displayColor.SplorgAction();
         }
+
+        public override void Speak()
+        {
+            Console.WriteLine(Name + " says: " + _splorg.Communicate())
+        }
     }
 }

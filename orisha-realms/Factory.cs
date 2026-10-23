@@ -9,7 +9,7 @@ namespace orisha_realms
 {
     public class Factory
     {
-        public static Character CreateCharacter(string choice, string name string color = "")
+        public static Character CreateCharacter(string choice, string name string color = "Red")
         {
             switch (choice.ToLower())
             {

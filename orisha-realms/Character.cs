@@ -39,7 +39,7 @@ namespace orisha_realms
             Console.WriteLine(Name + " says: I am ready.");
         }
 
-        public void PrintDetails()
+        public virtual void PrintDetails()
         {
             Console.WriteLine("\n--- Character Details ---");
             Console.WriteLine("Name: " + Name);

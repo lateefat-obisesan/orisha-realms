@@ -13,7 +13,7 @@ namespace orisha_realms.Legacy
         private readonly string _displayColor;
         public SplorgAdapter(string name, string color) : base(name, color + " Splorg", 50, 50, 50, 50, 50, 50)
         {
-            switch ()
+            switch (color.ToLower())
             {
                 case "red":
                     _displayColor = "Red";

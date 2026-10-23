@@ -47,7 +47,7 @@ namespace orisha_realms
 
                             color = Console.ReadLine();
                         }
-                        playerCharacter = Factory.CreateCharacter(type, name);
+                        playerCharacter = Factory.CreateCharacter(type, name, color);
                         Console.WriteLine("Character created successfully!");
                         break;
 

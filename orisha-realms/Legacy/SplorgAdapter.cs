@@ -48,7 +48,7 @@ namespace orisha_realms.Legacy
 
         public override void Speak()
         {
-            Console.WriteLine(Name + " says: " + _splorg.Communicate())
+            Console.WriteLine(Name + " says: " + _splorg.Communicate());
         }
 
         public override void PrintDetails()

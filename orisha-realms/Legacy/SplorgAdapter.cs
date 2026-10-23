@@ -13,7 +13,11 @@ namespace orisha_realms.Legacy
         private readonly string _displayColor;
         public SplorgAdapter(string name, string color) : base(name, color + " Splorg", 50, 50, 50, 50, 50, 50)
         {
-            string legacyColor;
+            switch ()
+            { 
+                
+            }
+
         }
     }
 }

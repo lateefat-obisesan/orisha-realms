@@ -39,6 +39,14 @@ namespace orisha_realms
                         string name = Console.ReadLine();
                         Console.WriteLine("Choose Lineage (Ogun - Esu - Yemoja): ");
                         string type = Console.ReadLine();
+                        string color = "Red";
+                        if (type.ToLower() == "splorg")
+                        {
+                            Console.WriteLine(
+                                "Choose Splorg Colour (Red - Green - Blue): ");
+
+                            color = Console.ReadLine();
+                        }
                         playerCharacter = Factory.CreateCharacter(type, name);
                         Console.WriteLine("Character created successfully!");
                         break;

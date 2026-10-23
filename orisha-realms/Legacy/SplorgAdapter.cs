@@ -10,9 +10,10 @@ namespace orisha_realms.Legacy
     public class SplorgAdapter : Character
     {
         private readonly Splorg _splog;
+        private readonly string _displayColor;
         public SplorgAdapter(string name, string color) : base(name, color + " Splorg", 50, 50, 50, 50, 50, 50)
         {
-            _splorg = new Splorg(name, "Red");
+            string legacyColor;
         }
     }
 }

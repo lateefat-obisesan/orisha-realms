@@ -1,4 +1,5 @@
-﻿using System;
+﻿using orisha_realms.Legacy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace orisha_realms
 {
     public class Factory
     {
-        public static Character CreateCharacter(string choice, string name)
+        public static Character CreateCharacter(string choice, string name string color = "")
         {
             switch (choice.ToLower())
             {
@@ -24,6 +25,8 @@ namespace orisha_realms
                     Yemoja yemoja = new Yemoja();
                     yemoja.Name = name;
                     return yemoja;
+                case "splorg":
+                    return new SplorgAdapter(name, color);
                 default:
                     Ogun error = new Ogun();
                    error.Name = name;

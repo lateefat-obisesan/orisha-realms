@@ -57,6 +57,7 @@ namespace orisha_realms.Legacy
             Console.WriteLine("Splorg Colour: " + _displayColor);
             Console.WriteLine("Splorg Description:");
 
+
             _splorg.printDescription();
         }
     }
